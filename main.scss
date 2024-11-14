@@ -1,0 +1,18 @@
+@use 'navbar';
+@use 'theme-cards';
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pheonix-logo {
+    max-width: 100px; 
+    height: auto;
+}
+
+#tab-themes h1 {
+    padding-top: 15rem;
+    margin-top: 0;
+  }
+
