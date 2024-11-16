@@ -10,25 +10,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
 
-  <!-- Hero Section with Navbar -->
   <section class="et-hero-tabs">
     <img class="logo" src="./Assets/full_logo_nb.png" alt="Logo" />
     <div class="typewriter-container">
-        <h3 class="heading-subtitle quicksand typewriter">Creating Global Leaders in Tech and Sustainability</h3>
-        </div>  
+      <h3 id="typewriter" class="line-1"></h3>
+    </div>  
+  
+    <!-- Hamburger Menu Icon for Mobile -->
+    <!-- <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  
     <div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="#details">DETAILS</a>
       <a class="et-hero-tab" href="#themes">THEMES</a>
       <a class="et-hero-tab" href="#faq">FAQ</a>
       <a class="et-hero-tab" href="#contact">CONTACT US</a>
       <span class="et-hero-tab-slider"></span>
-    </div>
-    
-   <!-- Hamburger Menu Icon for Mobile -->
+    </div> -->
+  
+    <!-- Collapsible Mobile Menu -->
+    <!-- <div class="mobile-menu">
+      <a href="#details">DETAILS</a>
+      <a href="#themes">THEMES</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">CONTACT US</a>
+    </div> -->
   </section>
+  
   
 
   <!-- Details Box  --> 
@@ -48,26 +64,37 @@
     <section class="et-slide fixed-height" id="themes">
       <h1>An Exciting Array Of Themes</h1>
       <div class="themes-container">
+        
         <div class="card">
           <h2> Gamifying the Global Goals </h2>
           <h5> <i> For Grades 6 - 8 </i></h5>
           <p class="quicksand">
-            Bring the UN SDGs to life with a game that inspires! Use Scratch or simple block-based platform to create a fun, interactive experience that teaches others about an SDG of your choice.
+            Bring the UN SDGs to life with a game that inspires! Use Scratch or a simple block-based platform to create a fun, interactive experience that teaches others about an SDG of your choice.
           </p>
+          <p class="product-ideas"><strong>Product Ideas:</strong> A recycling-themed game, a quiz game on climate action, or an interactive story on equality.</p>
         </div>
+        
         <div class="card">
           <h2> Website/App Development </h2>
           <h5> <i> For Grades 6 - 12 </i></h5>
           <p class="quicksand">
-            Create powerful websites or apps that tackle today's biggest challenges! Use your tech skills to design solutions that drive progress toward the UN SDGs and inspire change.          </p>
+            Create powerful websites or apps that tackle today's biggest challenges! Use your tech skills to design solutions that drive progress toward the UN SDGs and inspire change.
+          </p>
+          <p class="product-ideas"><strong>Product Ideas:</strong> A community recycling app, an educational website on clean energy, or an app promoting mental health resources.</p>
         </div>
+        
         <div class="card">
           <h2> The Impact Incubator </h2>
           <h5> <i> For Grades 9 - 12 </i></h5>
           <p class="quicksand">
-            A new dimension of possibilities awaits you in this challenge combining the power of business with tech. Here, you will pitch an original tech-oriented product that aims to create positive social change in a realistic market setup.          </p>
+            A new dimension of possibilities awaits you in this challenge combining the power of business with tech. Here, you will pitch an original tech-oriented product that aims to create positive social change in a realistic market setup.
+          </p>
+          <p class="product-ideas"><strong>Product Ideas:</strong> A social media platform for young entrepreneurs, a marketplace for sustainable products, or an app connecting volunteers with local NGOs.</p>
         </div>
+        
+      </div>
     </section>
+    
 
     <!-- Toggle - rewards, timeline, faq  --> 
     <section class="et-slide" id="faq">
@@ -197,16 +224,78 @@
 
     <section class="et-slide fixed-height" id="contact">
       <footer id="team">
-      <h2>Meet The Team</h2>
-      <p>Website by: Team Codefest</p>
-      <p>Contact: codefest@example.com</p>
-      <a href="#terms">Terms & Conditions</a>
-    </footer>
+        <h2>Meet The Team</h2>
+        <p>Website by: Team Codefest</p>
+        <p>Contact: <a href="mailto:codefest@example.com">codefest@example.com</a></p>
+    
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    
+        <!-- Button to open Team Info and T&C pop-ups -->
+        <p><a href="#team-modal" id="team-popup" class="popup-btn">See the Full Team</a></p>
+        <br>
+        <button id="terms-popup" class="popup-btn">Terms & Conditions</button>
+        
+        <!-- Copyright Statement -->
+        <p>&copy; 2024 Team Codefest. All Rights Reserved.</p>
+    
+        <!-- Team Modal -->
+        <div id="team-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('team-modal')">&times;</span>
+            <h2>Our Team</h2>
+            <div class="team-container">
+              <!-- Placeholder for Team Member Profiles -->
+              <div class="team-member">
+                <img src="assets/team-member1.jpg" alt="Team Member 1">
+                <p>Name: John Doe</p>
+                <p>Role: Developer</p>
+              </div>
+              <div class="team-member">
+                <img src="assets/team-member2.jpg" alt="Team Member 2">
+                <p>Name: Jane Smith</p>
+                <p>Role: Designer</p>
+              </div>
+              <!-- Add more team members as needed -->
+            </div>
+          </div>
+        </div>
+    
+        <!-- Terms & Conditions Modal -->
+        <div id="terms-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('terms-modal')">&times;</span>
+            <h2>Terms & Conditions</h2>
+            <div class="terms-content">
+              <ul>
+                <li>All participants must be under the age of 19.</li>
+                <li>Only one registration per team is allowed, and each participant can only participate in one team.</li>
+                <li>All projects must be original and the unpublished work of the participant.</li>
+                <li>Any submission that is found to be plagiarized/already published on the internet will be disqualified.</li>
+                <li>Participants may use open-source libraries and pre-existing code snippets but should ensure all contributions are credited.</li>
+                <li>Judges’ decisions are final and cannot be contested.</li>
+                <li>Participants are expected to maintain a respectful and supportive environment for all.</li>
+                <li>Harassment, discrimination, and inappropriate behavior are strictly prohibited.</li>
+                <li>Failure to adhere to these conditions will result in immediate disqualification.</li>
+              </ul>
+              <p>For any questions, please contact <a href="mailto:codefest@mlsi.in">codefest@mlsi.in</a>.</p>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
     </section>
+    
   </main>
 
   
   <script src = "navbar_script.js"></script>
   <script src = "script.js"></script>
+  <script src="typewriter.js"></script>
 </body>
 </html>

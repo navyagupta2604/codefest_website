@@ -95,4 +95,15 @@ class StickyNavigation {
 
 $(document).ready(function() {
   new StickyNavigation();
+  const $hamburgerMenu = $('.hamburger-menu');
+  const $mobileMenu = $('.mobile-menu');
+
+  $hamburgerMenu.click(function() {
+    $mobileMenu.toggleClass('active');
+  });
+
+  // Optional: Close the menu when a link is clicked
+  $mobileMenu.find('a').click(function() {
+    $mobileMenu.removeClass('active');
+  });
 });

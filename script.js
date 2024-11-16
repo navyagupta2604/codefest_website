@@ -61,5 +61,36 @@ document.querySelectorAll(".faq-question").forEach(button => {
     });
   });
   
+// Foot Script
+// Function to open a modal
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'block';
+}
 
-  
+// Function to close a modal
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
+// Event listeners for opening modals
+document.getElementById('team-popup').onclick = function () {
+  openModal('team-modal');
+};
+
+document.getElementById('terms-popup').onclick = function () {
+  openModal('terms-modal');
+};
+
+// Close modal when clicking outside content
+window.onclick = function (event) {
+  let teamModal = document.getElementById('team-modal');
+  let termsModal = document.getElementById('terms-modal');
+  if (event.target == teamModal) {
+    closeModal('team-modal');
+  }
+  if (event.target == termsModal) {
+    closeModal('terms-modal');
+  }
+};
+
+// Mobile navbar
