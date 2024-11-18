@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nexus - All India CodeFest</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Hero Section with Navbar -->
+  <section class="et-hero-tabs">
+    <img class="logo" src="./Assets/nexus-logo-nb.png" alt="Logo" />
+    <div class="typewriter-container">
+        <h3 class="heading-subtitle didact-gothic-regular typewriter">INSPIRE. INNOVATE. IGNITE.</h3>
+        </div>  
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#details">DETAILS</a>
+      <a class="et-hero-tab" href="#themes">THEMES</a>
+      <a class="et-hero-tab" href="#faq">FAQ</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+    
+   <!-- Hamburger Menu Icon for Mobile -->
+  </section>
+  
+
+  <!-- Details Box  --> 
+  <main class="et-main">
+    <section class="et-slide fixed-height" id="details">
+      <h1>Event Details</h1>
+      <div class="details-box">
+        <h2>An All-India CodeFest</h2>
+        <p>Date of Event: 1 January - 25 January, 2025 <br>
+        Location: Online (Award Ceremony: MLSI School, Mumbai) <br>
+        Registrations: Open till 20 December, 2024 <br> </p>
+        <p></p>
+      </div>
+    </section>
+
+    <!-- Themes  --> 
+    <section class="et-slide fixed-height" id="themes">
+      <h1>An Exciting Array Of Themes</h1>
+      <div class="themes-container">
+        <div class="card">
+          <h2> Gamifying the Global Goals </h2>
+          <h5> <i> For Grades 6 - 8 </i></h5>
+          <p class="didact-gothic-regular">
+            Bring the UN SDGs to life with a game that inspires! Use Scratch or simple block-based platform to create a fun, interactive experience that teaches others about an SDG of your choice.
+          </p>
+          <p class="didact-gothic-regular"> <i>
+            Sample Ideas: A recycling-themed game, a quiz game on climate action impacts, or an interactive story spreading awareness about poverty in the world.
+          </i></p>
+        </div>
+        <div class="card">
+          <h2> Website/App Development </h2>
+          <h5> <i> For Grades 6 - 12 </i></h5>
+          <p class="didact-gothic-regular">
+            Create powerful websites or apps that tackle today's biggest challenges! Use your tech skills to design solutions that drive progress toward the UN SDGs and inspire change.          </p>
+            <p class="didact-gothic-regular"> <i>
+              Sample Ideas: A website that connects people with recycling services in an area, an app to help people improve mental health, or an educational web app highlighting different forms of inequality. 
+            </i> </p>
+          </div>
+        <div class="card">
+          <h2> The Impact Incubator </h2>
+          <h5> <i> For Grades 9 - 12 </i></h5>
+          <p class="didact-gothic-regular">
+            A new dimension of possibilities awaits you in this challenge combining the power of business with tech. Here, you will pitch an original tech-oriented product that aims to create positive social change in a realistic market setup.          </p>
+        <p class="didact-gothic-regular"> <i> Sample Ideas: A social media platform for young entrepreneurs, a marketplace for sustainable products, or an app that connects local farmers to urban consumers. </i></p>
+        </div>
+    </section>
+
+    <!-- Toggle - rewards, timeline, faq  --> 
+    <section class="et-slide" id="faq">
+      <h1>More About The CodeFest</h1>
+      <div class="toggle-container">
+        <button id="rewardsBtn">Rewards</button>
+        <button id="timelineBtn">Timeline</button>
+        <button id="faqsBtn">FAQs</button>
+      </div>  
+      <!-- Rewards content -->
+      <div id="rewardsContent" class="content-box quicksand">
+        <div id="winners">
+          <h3> Exciting Gifts and Rewards </h3>
+          <p> The student with the top entry from each category will receive gift vouchers and trophies, with a certificate of merit, while the top three will receive certificates of merit and other exciting perks. All participants will receive a certificate of participation.</p>
+        </div>
+        <div id="experts">
+          <h3> A Unique Chance to Meet With Industry Experts </h3>
+          <p> Students will have the chance to get feedback from by industry leaders in the IT and business fields. They will also be invited to attend the expert speaker series revolving around cultivating valuable skills in brainstorming, creating and marketing tech products. </p>
+        </div>
+      </div>      
+        </div>
+      </div>
+      <div id="timelineContent" class="content-box hidden">    
+
+        <div class="timeline">
+          <div class="outer">
+            <div class="card">
+              <div class="info">
+                <h3 class="title">20 November 2024</h3>
+                <p>Registrations Start </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">20-22 December 2024</h3>
+                <p> Registrations Close, Competition Briefing </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">27-30 December 2024</h3>
+                <p>Expert-Led Level Up Sessions </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">1-22 January 2025 </h3>
+                <p> Submission Period </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title"> 30 January 2025</h3>
+                <p> Award Ceremony at Mount Litera School International, Mumbai </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="faqsContent" class="content-box hidden">
+        <div id="faq" class="faq-section">
+          <h2 class="quicksand"> Frequently Asked Questions</h2>
+        
+          <div class="faq-item">
+            <button class="faq-question">What is the registration fee?</button>
+            <div class="faq-answer">
+              <p>The fee is INR 350 for individuals and INR 500 for teams (up to 3 members).</p>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <button class="faq-question">Who can participate in this event?</button>
+            <div class="faq-answer">
+              <p>Anyone from Grade 6 to Grade 12 is eligible to participate.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <button class="faq-question">Can we register individually or in teams?</button>
+            <div class="faq-answer">
+              <p>You can register individually or as a team, depending on your preference. However, registration charges differ for teams and individuals.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Is previous coding experience required?</button>
+            <div class="faq-answer">
+              <p>No, people at any level with a passion for tech are welcome to join- this is a celebration of learning as much as it is a competition, and we welcome people of all skill levels. That said, it’s advisable to have basic coding experience for the website/app development category in particular.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What are the prizes for winners?</button>
+            <div class="faq-answer">
+              <p>In addition to a trophy and a certificate of commendation, winners are eligible to receive gift vouchers and other exciting prizes (applicable for first, second and third place winners). Certificates of participation will be awarded to all participants.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What mode will the competition be in?</button>
+            <div class="faq-answer">
+              <p>Nexus will function online this year, with a final award announcement ceremony in Mumbai, at Mount Litera School International.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What are the timings of the event?</button>
+            <div class="faq-answer">
+              <p>Registrations open from November 20 onwards, and close by 20 December, post which we will communicate details regarding specific timings to participants. The competition is expected to run from 20 December to 25 January. </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Are only software projects allowed?</button>
+            <div class="faq-answer">
+              <p>Hardware projects are allowed for the final category, Impact Incubator. However, please note that the materials required must be sourced on your own. </p>
+            </div>
+          </div>
+
+
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- footer  --> 
+
+ <!-- footer  --> 
+
+ <section class="et-slide fixed-height" id="contact">
+  <footer id="team" class="didact-gothic-regular">
+    <h2 class="didact-gothic-regular">MEET THE TEAM</h2>
+    <p>Website by: Team Nexus</p>
+    <p>Contact: <a href="mailto:codefest@example.com">nexus@mlsi.in</a></p>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Button to open Team Info and T&C pop-ups -->
+    <p><a href="#team-modal" id="team-popup" class="popup-btn">See the Full Team</a></p>
+    <br>
+    <button id="terms-popup" class="popup-btn">Terms & Conditions</button>
+    
+    <!-- Copyright Statement -->
+    <p class="copyright">&copy; 2024 Team Nexus. All Rights Reserved.</p>
+
+    <!-- Team Modal -->
+    <div id="team-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('team-modal')">&times;</span>
+        <h2>Our Team</h2>
+        <div class="team-container">
+          <!-- Placeholder for Team Member Profiles -->
+          <div class="team-member">
+            <!-- <img src="assets/team-member2.jpg" alt="Team Member 2"> -->
+            <p>Name: Ms. Aishwarya Chavan</p>
+            <p>Role: Supervisor </p>
+          </div>
+          <div class="team-member">
+            <!-- <img src="assets/team-member1.jpg" alt="Team Member 1"> -->
+            <p>Name: Navya Gupta</p>
+            <p>Role: Event Coordinator </p>
+          </div>
+          <div class="team-member">
+            <!-- <img src="assets/team-member2.jpg" alt="Team Member 2"> -->
+            <p>Name: Raahi Veera</p>
+            <p>Role: Core Team </p>
+          </div>
+          <div class="team-member">
+            <!-- <img src="assets/team-member2.jpg" alt="Team Member 2"> -->
+            <p>Name: Ziaan Lalani</p>
+            <p>Role: Core Team</p>
+          </div>
+          <!-- Add more team members as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div id="terms-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('terms-modal')">&times;</span>
+        <h2>Terms & Conditions</h2>
+        <div class="terms-content">
+          <ul>
+            <li>All participants must be under the age of 19.</li>
+            <li>Only one registration per team is allowed, and each participant can only participate in one team.</li>
+            <li>All projects must be original and the unpublished work of the participant.</li>
+            <li>Any submission that is found to be plagiarized/already published on the internet will be disqualified.</li>
+            <li>Participants may use open-source libraries and pre-existing code snippets but should ensure all contributions are credited.</li>
+            <li>Judges’ decisions are final and cannot be contested.</li>
+            <li>Participants are expected to maintain a respectful and supportive environment for all.</li>
+            <li>Harassment, discrimination, and inappropriate behavior are strictly prohibited.</li>
+            <li>Failure to adhere to these conditions will result in immediate disqualification.</li>
+          </ul>
+          <p>For any questions, please contact <a href="mailto:codefest@mlsi.in">codefest@mlsi.in</a>.</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</section>
+
+</main>  </main>
+
+  
+  <script src = "navbar_script.js"></script>
+  <script src = "script.js"></script>
+</body>
+</html>
