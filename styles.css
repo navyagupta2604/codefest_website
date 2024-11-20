@@ -195,55 +195,78 @@ body {
 }
 
 /* Themes Section */
+
 #themes {
+  position: relative;
   padding: 2rem;
-  background-color: #1e1e1e;
   text-align: center;
-  /* Media query for smaller screens */
+  color: #f1f1f1;
+  z-index: 1;
+  overflow: hidden; /* Ensures the ::before element doesn't overflow */
 }
+
+#themes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Assets/Inverted.png'); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Enables parallax effect */
+  opacity: 0.5; /* Adjust opacity here */
+  z-index: -1; /* Places it behind the content */
+}
+
 #themes h1 {
   padding: 3rem;
 }
+
 #themes .themes-container {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
   width: 80%;
 }
+
 #themes .themes-container .card {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.8); /* Slight transparency for cards */
   color: #f1f1f1;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  /* Content visible by default on larger screens */
 }
+
 #themes .themes-container .card:hover {
   transform: scale(1.05);
 }
+
 #themes .themes-container .card h2 {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   font-size: max(2vw, 1.5rem);
 }
+
 #themes .themes-container .card h5,
 #themes .themes-container .card p {
   padding: 1rem;
   font-size: max(1vw, 1rem);
-  display: block; /* Always visible on larger screens */
 }
+
 @media (max-width: 768px) {
   #themes .themes-container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   #themes .card {
-    transform: none; /* Remove hover transform on smaller screens */
-    /* Hide content initially on smaller screens */
-    /* Show content when .active class is added */
+    transform: none;
   }
+
   #themes .card h2 {
     background-color: #444;
     color: #fff;
@@ -254,14 +277,18 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
   #themes .card h5,
   #themes .card p {
     display: none;
   }
-  #themes .card.active h5, #themes .card.active p {
+
+  #themes .card.active h5,
+  #themes .card.active p {
     display: block;
   }
 }
+
 
 /* FAQ Section */
 #faq {
@@ -590,3 +617,31 @@ footer .copyright {
 }
 
 /*# sourceMappingURL=styles.css.map */
+.et-slide.parallax {
+  background-image: url('Assets/nexus-logo-full.png'); /* Add the image path */
+  background-attachment: fixed; /* Enables the parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.et-slide.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.815); /* Adjust opacity and color */
+  z-index: -1;
+}
+
+.et-slide.fixed-height {
+  height: 100vh;
+}
+
+#details {
+  position: relative; /* Ensures content stays above the overlay */
+  z-index: 2;
+}
+
+
