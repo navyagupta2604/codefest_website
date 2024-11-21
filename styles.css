@@ -203,10 +203,6 @@ body {
 }
 #themes h1 {
   padding: 3rem;
-  color: white;
-  display: block;
-  background-color: black;
-  
 }
 #themes .themes-container {
   display: flex;
@@ -621,5 +617,3 @@ footer .copyright {
   position: relative; /* Ensures content stays above the overlay */
   z-index: 2;
 }
-
-
