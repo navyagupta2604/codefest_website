@@ -203,6 +203,10 @@ body {
 }
 #themes h1 {
   padding: 3rem;
+  color: white;
+  display: block;
+  background-color: black;
+  
 }
 #themes .themes-container {
   display: flex;
