@@ -21,20 +21,20 @@ a {
 .et-hero-tabs h1,
 .et-slide h1 {
   font-size: 2rem;
-  color: #ef9e65;
+  color: #5ccae5;
   letter-spacing: 0.5rem;
 }
 .et-hero-tabs h3,
 .et-slide h3 {
   font-size: 1rem;
-  color: #aaa;
+  color: #88d9ef;
   letter-spacing: 0.2rem;
 }
 
 .et-hero-tabs-container {
   display: flex;
   flex-direction: row;
-  position: absolute; /* Start positioned below the hero section */
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 70px;
@@ -53,13 +53,13 @@ a {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #ef9e65;
+  color: #5ccae5;
   transition: all 0.5s ease;
   letter-spacing: 0.1rem;
 }
 .et-hero-tab:hover {
   color: #ffffff;
-  background: rgba(241, 181, 102, 0.2);
+  background: rgba(92, 202, 229, 0.2);
   transition: all 0.5s ease;
 }
 
@@ -68,7 +68,7 @@ a {
   bottom: 0;
   width: 0;
   height: 3px;
-  background: #ef9e65;
+  background: #5ccae5;
   transition: left 0.3s ease;
 }
 
@@ -157,7 +157,7 @@ body {
   font-size: max(5%, 1.5rem);
 }
 .et-hero-tabs .logo {
-  width: 90%;
+  width: 70%;
   height: auto;
   max-width: 30rem;
   margin-bottom: 1rem;
@@ -165,7 +165,8 @@ body {
 .et-hero-tabs h3.heading-subtitle {
   color: white;
   letter-spacing: 0.5rem;
-  font-size: max(1.3rem, 30px);
+  font-size: 1rem;
+  padding-bottom: 10%;
 }
 
 /* Details Section */
@@ -192,6 +193,31 @@ body {
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   line-height: 180%;
+}
+#details a.registration-link {
+  display: inline-block;
+  background-color: #4caf50; /* Primary green */
+  color: #ffffff; /* White text */
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+#details a.registration-link:hover {
+  background-color: #43a047; /* Slightly darker green */
+  transform: scale(1.05);
+}
+#details a.registration-link:active {
+  background-color: #388e3c; /* Dark green */
+  transform: scale(0.98);
 }
 
 /* Themes Section */
@@ -295,6 +321,9 @@ body {
 #faq h1 {
   padding-bottom: 3rem;
 }
+#faq p {
+  padding-bottom: 3rem;
+}
 #faq .toggle-container {
   display: flex;
   justify-content: center;
@@ -306,12 +335,12 @@ body {
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
-  background-color: #f39c12;
+  background-color: #5ccae5;
   color: #1e1e1e;
   width: 35%;
 }
 #faq .toggle-container button:hover {
-  background-color: #e67e22;
+  background-color: #4eadc5;
 }
 #faq .content-box {
   display: none;
@@ -352,7 +381,7 @@ body {
   padding: 1rem;
   text-align: left;
   background: #333;
-  color: #ef9e65;
+  color: #5ccae5;
   font-size: 1rem;
   border: none;
   outline: none;
@@ -420,7 +449,7 @@ body {
   content: "";
   position: absolute;
   width: 50%;
-  border: solid orangered;
+  border: solid #5ccae5;
 }
 #faq .card:nth-child(odd)::before {
   left: 0px;
@@ -463,7 +492,7 @@ body {
   padding: 10px;
 }
 #faq .title {
-  color: rgb(255, 133, 52);
+  color: rgb(93, 231, 255);
   position: relative;
 }
 #faq .title::before {
@@ -473,7 +502,7 @@ body {
   height: 10px;
   background: white;
   border-radius: 999px;
-  border: 3px solid orangered;
+  border: 3px solid #2f94b0;
 }
 #faq .card:nth-child(even) > .info > .title {
   text-align: right;
@@ -589,3 +618,5 @@ footer .copyright {
   margin-top: 20px;
   line-height: 1.5;
 }
+
+/*# sourceMappingURL=styles.css.map */
