@@ -61,7 +61,7 @@
         text-align: center;
         font-size: max(5%, 1.5rem);
         .logo {
-            width: 90%;  
+            width: 70%;  
             height: auto;
             max-width: 30rem; 
             margin-bottom: 1rem;
@@ -71,8 +71,10 @@
         h3.heading-subtitle {
             color: white;
             letter-spacing: 0.5rem;
-            font-size: max(1.3rem, 30px);
+            font-size: 1rem;
+            padding-bottom: 10%;
         }
+
     }
 
 
@@ -101,6 +103,35 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         line-height: 180%;
         }
+        a.registration-link {
+          display: inline-block;
+          background-color: #4caf50; /* Primary green */
+          color: #ffffff; /* White text */
+          font-family: 'Arial', sans-serif;
+          font-size: 1rem;
+          text-transform: uppercase;
+          text-align: center;
+          text-decoration: none;
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 0.5rem;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          cursor: pointer;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          margin: 1rem;
+        }
+        
+        a.registration-link:hover {
+          background-color: #43a047; /* Slightly darker green */
+          transform: scale(1.05);
+        }
+        
+        a.registration-link:active {
+          background-color: #388e3c; /* Dark green */
+          transform: scale(0.98);
+        }
+        
+        
     }
     
     
@@ -196,6 +227,9 @@
         h1 {
             padding-bottom: 3rem;
         }
+        p {
+          padding-bottom: 3rem;
+        }
         .toggle-container {
         display: flex;
         justify-content: center;
@@ -206,11 +240,11 @@
             padding: 0.5rem 1rem;
             border: none;
             cursor: pointer;
-            background-color: #f39c12;
+            background-color: #5ccae5;
             color: #1e1e1e;
             width: 35%;
             &:hover {
-            background-color: #e67e22;
+            background-color: #4eadc5;
             }
         }
         }
@@ -263,7 +297,7 @@
     padding: 1rem;
     text-align: left;
     background: #333;
-    color: #ef9e65;
+    color: #5ccae5;
     font-size: 1rem;
     border: none;
     outline: none;
@@ -348,7 +382,7 @@
             content: "";
             position: absolute;
             width: 50%;
-            border: solid orangered;
+            border: solid #5ccae5;
           }
           
           /* Setting the border of top, bottom, left */
@@ -407,7 +441,7 @@
           
           /* Title of the card */
           .title {
-            color: rgb(255, 133, 52);
+            color: rgb(93, 231, 255);
             position: relative;
           }
           
@@ -419,7 +453,7 @@
             height: 10px;
             background: white;
             border-radius: 999px;
-            border: 3px solid orangered;
+            border: 3px solid #2f94b0;
           }
           
           /* text right if the card is even  */
