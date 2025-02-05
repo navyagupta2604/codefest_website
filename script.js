@@ -23,8 +23,13 @@ document.getElementById('rewardsBtn').addEventListener('click', function() {
     });
   });
 
+  // Function to toggle the mobile menu
+function toggleMenu() {
+    const menu = document.querySelector('.et-hero-tabs-container');
+    menu.classList.toggle('show');
+  }
   
-// FAQ dropdown and question ripple effect
+// JavaScript for FAQ dropdown and ripple effect
 document.querySelectorAll(".faq-question").forEach(button => {
     button.addEventListener("click", function(e) {
       // Create the ripple element
@@ -55,7 +60,6 @@ document.querySelectorAll(".faq-question").forEach(button => {
       answer.style.display = answer.style.display === "block" ? "none" : "block";
     });
   });
-
   
 // Foot Script
 // Function to open a modal
@@ -89,6 +93,4 @@ window.onclick = function (event) {
   }
 };
 
-  
-
-  
+// Mobile navbar

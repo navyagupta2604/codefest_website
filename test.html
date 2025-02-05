@@ -1,0 +1,26 @@
+<!-- Empty h3 initially -->
+
+
+<style>
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Text to type out
+    const text = "Creating Global Leaders in Tech and Sustainability";
+    const element = document.getElementById("typewriter");
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100); // Adjust typing speed here
+        }
+    }
+
+    // Start the typing effect
+    typeWriter();
+});
+</script>
